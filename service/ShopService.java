@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class ShopService {
 
-    public Shop create() {
+    public Shop create(Scanner scanner) {
         System.out.println("---- Create Shop ----");
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Shop Name - ");
         String name = scanner.nextLine();

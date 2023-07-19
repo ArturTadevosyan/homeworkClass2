@@ -5,9 +5,8 @@ import model.Goods;
 import java.util.Scanner;
 
 public class GoodsService {
-    public Goods create() {
+    public Goods create(Scanner scanner) {
         System.out.println("---- Create goods ----");
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Goods Name - ");
         String name = scanner.nextLine();

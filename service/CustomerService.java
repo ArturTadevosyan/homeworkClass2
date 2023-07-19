@@ -5,9 +5,8 @@ import model.Customer;
 import java.util.Scanner;
 
 public class CustomerService {
-    public Customer create(){
+    public Customer create(Scanner scanner) {
         System.out.println("---- Create Customer ----");
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Customer Name - ");
         String name = scanner.nextLine();
@@ -24,7 +23,7 @@ public class CustomerService {
         System.out.print("Enter Customer Address - ");
         String address = scanner.nextLine();
 
-        return new Customer(name,sureName,email,phone,address);
+        return new Customer(name, sureName, email, phone, address);
     }
 
 }
