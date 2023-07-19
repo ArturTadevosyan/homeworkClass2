@@ -9,7 +9,7 @@ import service.ShopService;
 public class Main {
     public static void main(String[] args) {
 
-        // Services
+        // With Services
         ShopService shopService = new ShopService();
         GoodsService goodsService = new GoodsService();
         CustomerService customerService = new CustomerService();
@@ -22,14 +22,14 @@ public class Main {
 
         System.out.println("----------------");
 
-        //Order 2
+        // Order 2
         Shop shop2 = shopService.create();
         Goods goods2 = goodsService.create();
         Customer customer2 = customerService.create();
         System.out.println(new Orders(2, shop2, goods2, customer2));
 
 
-//        //With  Constructor
+//        //With  Constructors
 //        Shop shop1 = new Shop("City", "Bangladesh 97/56", "+37494252195");
 //        Shop shop2 = new Shop("Apple", "Komitas97/56", "+37477331495");
 //
